@@ -1,0 +1,16 @@
+{
+    "characters": [
+        { "name": "jessica", "img": "..assets/jessica.png" },
+        { "name": "fred", "img": "..assets/fred.png" },
+        { "name": "fred", "img": "..assets/fred.png" },
+        { "name": "fred", "img": "..assets/fred.png" },
+        { "name": "fred", "img": "..assets/fred.png" },
+        { "name": "fred", "img": "..assets/fred.png" },
+        { "name": "fred", "img": "..assets/fred.png" },
+        { "name": "fred", "img": "..assets/fred.png" },
+        { "name": "fred", "img": "..assets/fred.png" },
+        { "name": "fred", "img": "..assets/fred.png" },
+        { "name": "fred", "img": "..assets/fred.png" },
+        { "name": "fred", "img": "..assets/fred.png" }
+    ]
+}
