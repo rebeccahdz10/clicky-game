@@ -11,7 +11,7 @@ color: black;
 `
 const Heading = styled.h1`
 color: black;
-margin: none;
+margin: 0;
 `
 
 function ClickyText() {

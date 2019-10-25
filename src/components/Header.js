@@ -31,7 +31,7 @@ const Header = props => (
       {/* ADD LOGIC FOR STATE TO RENDER CORRECT MESSAGE */}
       <div className="instructions">{props.children}</div>
       <div className="scores">
-        Current Score: {props.score} Top Score: {props.highscore}
+        Current Score: {props.score} | Top Score: {props.highscore}
       </div>
     </div>
   </Wrapper>
