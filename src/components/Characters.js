@@ -7,26 +7,27 @@ width: 100%;
 height: 100vh;
 `
 
-// var characters = {
-//     "characters": [
-//         { "name": "Michael", "image": "" },
-//         { "name": "Dwight", "image": "" },
-//         { "name": "Pam", "image": "" },
-//         { "name": "Jim", "image": "" },
-//         { "name": "Creed", "image": "" },
-//         { "name": "Meredith", "image": "" },
-//         { "name": "Kevin", "image": "" },
-//         { "name": "Angela", "image": "" },
-//         { "name": "Oscar", "image": "" },
-//         { "name": "Phyllis", "image": "" },
-//         { "name": "Stanley", "image": "" },
-//         { "name": "Kelly", "image": "" },
-//         { "name": "Ryan", "image": "" },
-//         { "name": "Nate", "image": "" },
-//         { "name": "Darryl", "image": "" },
-//         { "name": "Andy", "image": "" }
-//     ]
-// }
+const Image = styled.img`
+
+`
+
+var characters = {
+    "characters": [
+        { "name": "Arrow", "image": "../assets/images/arrow.jpg" },
+        { "name": "Braid", "image": "../assets/images/braid.jpg" },
+        { "name": "BraidHor", "image": "../assets/images/braidHor.jpg" },
+        { "name": "Chevron", "image": "../assets/images/chevron.jpg" },
+        { "name": "ChevronWhite", "image": "../assets/images/chevronWhite.jpg" },
+        { "name": "Circles", "image": "../assets/images/circles.jpg" },
+        { "name": "Diamond", "image": "../assets/images/diamond.jpg" },
+        { "name": "DiamondHor", "image": "../assets/images/diamondHor.jpg" },
+        { "name": "Inter", "image": "../assets/images/inter.jpg" },
+        { "name": "LineDiagonal", "image": "../assets/images/lineDiagonal.jpg" },
+        { "name": "Polka", "image": "../assets/images/polka.jpg" },
+        { "name": "Square", "image": "../assets/images/square.jpg" }
+    ]
+}
+
 // var shuffledChars = shuffle(chars.characters);
 // shuffledChars.forEach(function (char) {
 //     console.log(char.name + ": " + char.image);
@@ -46,16 +47,16 @@ height: 100vh;
 //     return array;
 // }
 
-function Characters() {
-    return (
-        <div className="Characters">
-            <Body>
+const Characters = props => (
+    <div>
+        <Body
+            className="mycard"
+            value={props.name}
+            onClick={() => props.handleClick(props.name)}
+        >
+            <Image alt={props.name} src={props.image} />
 
-            </Body>
-
-
-        </div>
-    );
-}
-
+        </Body>
+    </div>
+);
 export default Characters;

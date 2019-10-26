@@ -3,7 +3,7 @@ import styled from 'styled-components'
 
 const Foot = styled.div`
 position: fixed;
-text-align: left;
+text-align: center;
 bottom: 0;
 width: 100%;
 height: 10vh;
@@ -19,15 +19,15 @@ padding: 5px;
 `
 
 function Footer() {
-    return(
-        <Foot className="Footer">
+  return (
+    <Foot className="Footer">
 
-        <Text>
+      <Text>
         Clicky Game!
         </Text>
 
-      </Foot>
-    );
+    </Foot>
+  );
 }
 
 export default Footer;
