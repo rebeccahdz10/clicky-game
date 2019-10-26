@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components'
 
 const Wrapper = styled.div`
+text-align: center;
 color: white;
 display: inlineBlock;
 width: 100%;
@@ -13,13 +14,6 @@ const Title = styled.a`
 color: white;
 text-decoration: none;
 `
-// class App extends Component {
-//   state = {
-//     cards,
-//     currentScore: 0,
-//     topScore: 0
-//   };
-// }
 
 const Header = props => (
   <Wrapper className="Header">
@@ -29,9 +23,9 @@ const Header = props => (
       </Title>
 
       {/* ADD LOGIC FOR STATE TO RENDER CORRECT MESSAGE */}
-      <div className="instructions">{props.children}</div>
+      <div className="instructions">{props.message || "Click an image to begin!"}</div>
       <div className="scores">
-        Current Score: {props.score} | Top Score: {props.highscore}
+        Current Score: {props.score} | Top Score: {props.topScore}
       </div>
     </div>
   </Wrapper>

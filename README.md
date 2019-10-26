@@ -1,4 +1,4 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Two issues I'm currently having are getting the images to render, and having the game not start over after 2 clicks. 
 
 ## Available Scripts
 

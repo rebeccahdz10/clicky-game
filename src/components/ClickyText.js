@@ -8,6 +8,7 @@ height: 40vh;
 border: 5;
 `
 const TextWrapper = styled.div`
+text-align: center;
 top: 500px;
 margin: auto;
 `
